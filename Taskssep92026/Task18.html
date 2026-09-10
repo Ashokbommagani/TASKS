@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+</head>
+
+<body>
+
+    <h1>User Registration Form</h1>
+
+    <form>
+
+        Username:
+
+        <input
+            type="text"
+            placeholder="Enter username"
+            required
+            minlength="3"
+            maxlength="15">
+
+        <br><br>
+
+        Email:
+
+        <input
+            type="email"
+            placeholder="Enter email"
+            required>
+
+        <br><br>
+
+        Age:
+
+        <input
+            type="number"
+            min="18"
+            max="60"
+            placeholder="Enter age"
+            required>
+
+        <br><br>
+
+        Phone:
+
+        <input
+            type="tel"
+            pattern="[0-9]{10}"
+            placeholder="Enter 10 digit phone number"
+            required>
+
+        <br><br>
+
+        Password:
+
+        <input
+            type="password"
+            pattern=".{6,}"
+            placeholder="Minimum 6 characters"
+            required>
+
+        <br><br>
+
+        Employee ID:
+
+        <input
+            type="text"
+            value="EMP2026"
+            readonly>
+
+        <br><br>
+
+        Company:
+
+        <input
+            type="text"
+            value="Tech Company"
+            disabled>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
